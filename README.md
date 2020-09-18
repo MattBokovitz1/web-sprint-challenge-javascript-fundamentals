@@ -27,13 +27,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach does not return a new array and the return statement is optional. .map returns a new array automatically and the return statement is required. 
+
 2. Explain the difference between a callback and a higher order function.
+
+The higher order function receives a callback function. A callback function is passed into higher order function as an argument.
 
 3. What is closure?
 
+Describes accessibility of variables and functions. An inner function has access to variables from an outer function, but not the other way around. 
+
 4. Describe the four rules of the 'this' keyword.
 
+1) Window Binding: .this keyword means nothing without context. If you type this into your console it returns the entire language. If in strict mode, it will return undefined.
+2) Implicit Binding: Only applies to objects with methods. The function is invoked, look to the left of the dot; that is what .this refers to
+3) Explicit Binding: Uses .call, .apply, and .bind. Explicitly passes in a this context to .call, .apply, and .bind.
+4) New Binding: Using the new keyword constructs a new object and 'this' point to it. 
+
 5. Why do we need super() in an extended class?
+
+We need super() to pass the child attributes into the child class. Extends and super do what .call and .create did.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -57,12 +70,12 @@ Your finished project must include all of the following requirements:
 #### Task A: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
+* [check ] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
 
 #### Task B: Closure
 
 This challenge takes a look at closures as well as scope. 
-* [ ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
+* [ check ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
 
 #### Task C: Prototypes
 
