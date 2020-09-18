@@ -22,7 +22,7 @@ The zoos want to display both the scientific name and the animal name in front o
 */
 const displayNames = [];
 zooAnimals.forEach(function(item){
-  return displayNames.push('Name: ' + item.animal_name + ', Scientific: ' + item.scientific_name);
+  return displayNames.push(`Name: ${item.animal_name}, Scientific:  ${item.scientific_name}`);
 })
 console.log(displayNames);
 
@@ -100,4 +100,3 @@ const greeting = function(a, b){
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
-
